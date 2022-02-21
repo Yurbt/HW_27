@@ -8,8 +8,6 @@
 
 Критичность(Severity):
 
-Приоритет (Priority):
-
 Статус (Status):
 
 Автор (Author):
