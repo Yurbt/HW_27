@@ -345,6 +345,12 @@
 							"// pm.environment.unset(\"variable_key\");\r",
 							" pm.environment.set(\"name\", jsonData.name);\r",
 							"console.log(jsonData.name)\r",
+							"\r",
+							"\r",
+							"let length = jsonData.salary.length\r",
+							"for (let i = 0; i<length;i++) {\r",
+							"    console.log(\"salary[\"+i+\"]\",jsonData.salary[i])\r",
+							"}\r",
 							""
 						],
 						"type": "text/javascript"
