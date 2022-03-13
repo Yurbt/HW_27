@@ -118,7 +118,7 @@
 							"pm.test(\"Your test 4*salary\", function () {\r",
 							"    pm.expect(family.u_salary_1_5_year).to.eql(4 * post_form_data.salary);\r",
 							"})\r",
-							"console.log(family.u_salary_1_5_year, \"=\", post_form_data.salary, \"*4\");"
+							"console.log(family.u_salary_1_5_year+\"=\"+post_form_data.salary+\"*4\");"
 						],
 						"type": "text/javascript"
 					}
