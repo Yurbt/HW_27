@@ -12,7 +12,7 @@ insert into emrloyees_27_270(id, emrloyee_name) values ('9','trushkin pavel petr
 insert into emrloyees_27_270(id, emrloyee_name) values ('10','svetlova elena sergeevno') ;
 insert into emrloyees_27_270(id, emrloyee_name) values ('11','timoôeeva larisa petrovna'); 
 insert into emrloyees_27_270(id, emrloyee_name) values ('12','pelmeshkina arina rodionovna');
-insert into emrloyees_27_270(id, emrloyee_name) values ('13','tþôtiy viktor evgenevich'); 
+insert into emrloyees_27_270(id, emrloyee_name) values ('13','tyuôtiy viktor evgenevich'); 
 insert into emrloyees_27_270(id, emrloyee_name) values ('14','tolstoy lev ivanovich'); 
 insert into emrloyees_27_270(id, emrloyee_name) values ('15','blokhin oleg ivanovich') ;
 insert into emrloyees_27_270(id, emrloyee_name) values ('16','beskov vladimir ilich') ;
@@ -22,8 +22,8 @@ insert into emrloyees_27_270(id, emrloyee_name) values ('19','kirkorov gleb andr
 insert into emrloyees_27_270(id, emrloyee_name) values ('20','pugachev emelyan petrovich'); 
 insert into emrloyees_27_270(id, emrloyee_name) values ('21','razin stepan ivanovich'); 
 insert into emrloyees_27_270(id, emrloyee_name) values ('22','razin andrey petrovich'); 
-insert into emrloyees_27_270(id, emrloyee_name) values ('23','dzþba valeriy pavlovich'); 
-insert into emrloyees_27_270(id, emrloyee_name) values ('24','gagarin Þriy alekseevich');
+insert into emrloyees_27_270(id, emrloyee_name) values ('23','dzyuba valeriy pavlovich'); 
+insert into emrloyees_27_270(id, emrloyee_name) values ('24','gagarin yuriy alekseevich');
 insert into emrloyees_27_270(id, emrloyee_name) values ('25','bulgakov anatoliy yakovlevich'); 
 insert into emrloyees_27_270(id, emrloyee_name) values ('26','sholokhov leonid ilich') ;
 insert into emrloyees_27_270(id, emrloyee_name) values ('27','lenin avtandil avtondilovich') ;
