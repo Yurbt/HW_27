@@ -1,12 +1,9 @@
-Таблица employees
+--Table employees
 
 --Создать таблицу employees
 --- id. serial,  primary key,
 --- employee_name. Varchar(50), not null
 --Наполнить таблицу employee 70 строками.
-
-
-
 
 
 create table employees_27_72(id serial primary key, emrloyee_name varchar(50) not null);
@@ -80,16 +77,11 @@ insert into employees_27_72(id, emrloyee_name) values ('67','vaskin leon ivanovi
 insert into employees_27_72(id, emrloyee_name) values ('68','akerov rovshan petrovich') ;
 insert into employees_27_72(id, emrloyee_name) values ('69','ivanova nonna gennadevna') ;
 insert into employees_27_72(id, emrloyee_name) values ('70','moskin slon andreevich') ;
---
---
---
---
---
---
+
 select * from employees_27_72
 
---Таблица salary
---
+
+--Table salary
 --Создать таблицу salary
 --- id. Serial  primary key,
 --- monthly_salary. Int, not null
@@ -112,32 +104,29 @@ select * from employees_27_72
 --- 2500
 
 
+create table salary_27_72(id Serial primary key, monthly_salary int not null);
+insert into salary_27_72 (monthly_salary) values(1000);
+insert into salary_27_72 (monthly_salary) values(1100);
+insert into salary_27_72 (monthly_salary) values(1200);
+insert into salary_27_72 (monthly_salary) values(1300);
+insert into salary_27_72 (monthly_salary) values(1400);
+insert into salary_27_72 (monthly_salary) values(1500);
+insert into salary_27_72 (monthly_salary) values(1600);
+insert into salary_27_72 (monthly_salary) values(1700);
+insert into salary_27_72 (monthly_salary) values(1800);
+insert into salary_27_72 (monthly_salary) values(1900);
+insert into salary_27_72 (monthly_salary) values(2000);
+insert into salary_27_72 (monthly_salary) values(2100);
+insert into salary_27_72 (monthly_salary) values(2200);
+insert into salary_27_72 (monthly_salary) values(2300);
+insert into salary_27_72 (monthly_salary) values(2400);
+insert into salary_27_72 (monthly_salary) values(2500);
 
 
-
---create table salary_27_72(id Serial primary key, monthly_salary int not null);
---insert into salary_27_72 (monthly_salary) values(1000);
---insert into salary_27_72 (monthly_salary) values(1100);
---insert into salary_27_72 (monthly_salary) values(1200);
---insert into salary_27_72 (monthly_salary) values(1300);
---insert into salary_27_72 (monthly_salary) values(1400);
---insert into salary_27_72 (monthly_salary) values(1500);
---insert into salary_27_72 (monthly_salary) values(1600);
---insert into salary_27_72 (monthly_salary) values(1700);
---insert into salary_27_72 (monthly_salary) values(1800);
---insert into salary_27_72 (monthly_salary) values(1900);
---insert into salary_27_72 (monthly_salary) values(2000);
---insert into salary_27_72 (monthly_salary) values(2100);
---insert into salary_27_72 (monthly_salary) values(2200);
---insert into salary_27_72 (monthly_salary) values(2300);
---insert into salary_27_72 (monthly_salary) values(2400);
---insert into salary_27_72 (monthly_salary) values(2500);
---
---
---select * from salary_27_72;
+select * from salary_27_72;
 
 
---Таблица employee_salary
+--Table employee_salary
 --
 --Создать таблицу employee_salary
 --- id. Serial  primary key,
@@ -147,55 +136,52 @@ select * from employees_27_72
 --- в 10 строк из 40 вставить несуществующие employee_id
 
 
+create table employee_salary_27_72(id Serial primary key, employee_id int not null unique, salary_id int not null);
+insert into employee_salary_27_72(employee_id, salary_id) values (3,7);
+insert into employee_salary_27_72(employee_id, salary_id) values (1,4);
+insert into employee_salary_27_72(employee_id, salary_id) values (5,9);
+insert into employee_salary_27_72(employee_id, salary_id) values (40,13);
+insert into employee_salary_27_72(employee_id, salary_id) values (23,4);
+insert into employee_salary_27_72(employee_id, salary_id) values (11,2);
+insert into employee_salary_27_72(employee_id, salary_id) values (52,10);
+insert into employee_salary_27_72(employee_id, salary_id) values (15,13);
+insert into employee_salary_27_72(employee_id, salary_id) values (26,4);
+insert into employee_salary_27_72(employee_id, salary_id) values (16,1);
+insert into employee_salary_27_72(employee_id, salary_id) values (33,7);
+insert into employee_salary_27_72(employee_id, salary_id) values (300,7);
+insert into employee_salary_27_72(employee_id, salary_id) values (86,14);
+insert into employee_salary_27_72(employee_id, salary_id) values (2,8);
+insert into employee_salary_27_72(employee_id, salary_id) values (4,10);
+insert into employee_salary_27_72(employee_id, salary_id) values (6,11);
+insert into employee_salary_27_72(employee_id, salary_id) values (7,10);
+insert into employee_salary_27_72(employee_id, salary_id) values (69,7);
+insert into employee_salary_27_72(employee_id, salary_id) values (65,8);
+insert into employee_salary_27_72(employee_id, salary_id) values (50,7);
+insert into employee_salary_27_72(employee_id, salary_id) values (51,15);
+insert into employee_salary_27_72(employee_id, salary_id) values (54,7);
+insert into employee_salary_27_72(employee_id, salary_id) values (41,7);
+insert into employee_salary_27_72(employee_id, salary_id) values (73,12);
+insert into employee_salary_27_72(employee_id, salary_id) values (93,8);
+insert into employee_salary_27_72(employee_id, salary_id) values (70,1);
+insert into employee_salary_27_72(employee_id, salary_id) values (45,2);
+insert into employee_salary_27_72(employee_id, salary_id) values (46,2);
+insert into employee_salary_27_72(employee_id, salary_id) values (37,9);
+insert into employee_salary_27_72(employee_id, salary_id) values (85,7);
+insert into employee_salary_27_72(employee_id, salary_id) values (103,7);
+insert into employee_salary_27_72(employee_id, salary_id) values (31,5);
+insert into employee_salary_27_72(employee_id, salary_id) values (411,7);
+insert into employee_salary_27_72(employee_id, salary_id) values (32,7);
+insert into employee_salary_27_72(employee_id, salary_id) values (113,9);
+insert into employee_salary_27_72(employee_id, salary_id) values (34,4);
+insert into employee_salary_27_72(employee_id, salary_id) values (36,6);
+insert into employee_salary_27_72(employee_id, salary_id) values (105,7);
+insert into employee_salary_27_72(employee_id, salary_id) values (39,7);
+insert into employee_salary_27_72(employee_id, salary_id) values (211,11);
+
+select * from employee_salary_27_72
 
 
---DROP TABLE IF EXISTS employee_salary_27_72;
---create table employee_salary_27_72(id Serial primary key, employee_id int not null unique, salary_id int not null);
---insert into employee_salary_27_72(employee_id, salary_id) values (3,7);
---insert into employee_salary_27_72(employee_id, salary_id) values (1,4);
---insert into employee_salary_27_72(employee_id, salary_id) values (5,9);
---insert into employee_salary_27_72(employee_id, salary_id) values (40,13);
---insert into employee_salary_27_72(employee_id, salary_id) values (23,4);
---insert into employee_salary_27_72(employee_id, salary_id) values (11,2);
---insert into employee_salary_27_72(employee_id, salary_id) values (52,10);
---insert into employee_salary_27_72(employee_id, salary_id) values (15,13);
---insert into employee_salary_27_72(employee_id, salary_id) values (26,4);
---insert into employee_salary_27_72(employee_id, salary_id) values (16,1);
---insert into employee_salary_27_72(employee_id, salary_id) values (33,7);
---insert into employee_salary_27_72(employee_id, salary_id) values (300,7);
---insert into employee_salary_27_72(employee_id, salary_id) values (86,14);
---insert into employee_salary_27_72(employee_id, salary_id) values (2,8);
---insert into employee_salary_27_72(employee_id, salary_id) values (4,10);
---insert into employee_salary_27_72(employee_id, salary_id) values (6,11);
---insert into employee_salary_27_72(employee_id, salary_id) values (7,10);
---insert into employee_salary_27_72(employee_id, salary_id) values (69,7);
---insert into employee_salary_27_72(employee_id, salary_id) values (65,8);
---insert into employee_salary_27_72(employee_id, salary_id) values (50,7);
---insert into employee_salary_27_72(employee_id, salary_id) values (51,15);
---insert into employee_salary_27_72(employee_id, salary_id) values (54,7);
---insert into employee_salary_27_72(employee_id, salary_id) values (41,7);
---insert into employee_salary_27_72(employee_id, salary_id) values (73,12);
---insert into employee_salary_27_72(employee_id, salary_id) values (93,8);
---insert into employee_salary_27_72(employee_id, salary_id) values (70,1);
---insert into employee_salary_27_72(employee_id, salary_id) values (45,2);
---insert into employee_salary_27_72(employee_id, salary_id) values (46,2);
---insert into employee_salary_27_72(employee_id, salary_id) values (37,9);
---insert into employee_salary_27_72(employee_id, salary_id) values (85,7);
---insert into employee_salary_27_72(employee_id, salary_id) values (103,7);
---insert into employee_salary_27_72(employee_id, salary_id) values (31,5);
---insert into employee_salary_27_72(employee_id, salary_id) values (411,7);
---insert into employee_salary_27_72(employee_id, salary_id) values (32,7);
---insert into employee_salary_27_72(employee_id, salary_id) values (113,9);
---insert into employee_salary_27_72(employee_id, salary_id) values (34,4);
---insert into employee_salary_27_72(employee_id, salary_id) values (36,6);
---insert into employee_salary_27_72(employee_id, salary_id) values (105,7);
---insert into employee_salary_27_72(employee_id, salary_id) values (39,7);
---insert into employee_salary_27_72(employee_id, salary_id) values (211,11);
---
---select * from employee_salary_27_72
-
-
---Таблица roles
+--Table roles
 --
 --Создать таблицу roles
 --- id. Serial  primary key,
@@ -231,7 +217,7 @@ INSERT INTO roles_27_72(role_name) VALUES ('Senior Automation QA engineer');
 
 select * from roles_27_72;
 
---Таблица roles_employee;
+--Table roles_employee;
 --
 --Создать таблицу roles_employee
 --- id. Serial  primary key,
@@ -241,9 +227,7 @@ select * from roles_27_72;
 
 create table roles_employee_27_72(id Serial primary key, employee_id int not null unique,
 							role_id int not null, foreign key(employee_id) references employees_27_72(id),
-							foreign key (role_id) references roles_27_72(id));
-						
-						
+							foreign key (role_id) references roles_27_72(id));				
 insert into roles_employee_27_72(employee_id,role_id)  values (7,2);
 insert into roles_employee_27_72(employee_id,role_id)  values (20,4);
 insert into roles_employee_27_72(employee_id,role_id)  values (3,9);
